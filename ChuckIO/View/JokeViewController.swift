@@ -36,8 +36,8 @@ class JokeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewModel?.getJoke()
         self.showLoadingView(true)
+        viewModel?.getJoke()
     }
 
     func showLoadingView(_ show: Bool) {

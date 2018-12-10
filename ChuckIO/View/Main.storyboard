@@ -63,18 +63,9 @@
                     <navigationItem key="navigationItem" title="Category" id="NQR-xm-KFU"/>
                     <connections>
                         <outlet property="activityIndicator" destination="L7c-kq-FPs" id="9bf-aE-ZdV"/>
-                        <outlet property="searchDisplayController" destination="jPw-3g-rxk" id="xf9-ao-c9m"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQP-fy-7wv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="jPw-3g-rxk">
-                    <connections>
-                        <outlet property="delegate" destination="0G6-2W-Hg3" id="SOG-34-s3P"/>
-                        <outlet property="searchContentsController" destination="0G6-2W-Hg3" id="li9-8p-aWF"/>
-                        <outlet property="searchResultsDataSource" destination="0G6-2W-Hg3" id="QXh-bM-p25"/>
-                        <outlet property="searchResultsDelegate" destination="0G6-2W-Hg3" id="f1A-B6-iIX"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="342" y="122"/>
         </scene>

@@ -16,7 +16,7 @@ public class CategoriesViewModel {
 
     // MARK: - Properties
     var service: ChuckAPI
-    var categories: [String] = []
+    private var categories: [String] = []
     var numberOfCells: Int {
         return categories.count
     }
@@ -33,10 +33,14 @@ public class CategoriesViewModel {
 
     func populateCategories() {
         ChuckAPI().getCategories(onComplete: { [weak self] (categories) in
-            self?.categories = self?.captalizeStrings(categories) ?? []
+            self?.categories = categories
             self?.delegate?.updateUI()
             }, onError: { (_) in
         })
+    }
+
+    func getCategoryAt(_ index: Int, captalized: Bool) -> String {
+        return captalized ? captalizeStrings(categories)[index] : categories[index]
     }
 
     func captalizeStrings(_ strings: [String]) -> [String] {

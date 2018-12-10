@@ -33,7 +33,7 @@ class CategoriesTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let jokeVC = segue.destination as? JokeViewController,
             let index = self.tableView.indexPathForSelectedRow,
-        let category = viewModel?.categories[index.row] {
+        let category = viewModel?.getCategoryAt(index.row, captalized: false) {
             jokeVC.viewModel = JokeViewModel(ChuckAPI(), category: category)
         }
     }
@@ -43,16 +43,15 @@ class CategoriesTableViewController: UITableViewController {
 // MARK: - UITableViewController Delegate and Data Source
 extension CategoriesTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.categories.count ?? 0
+        return viewModel?.numberOfCells ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "categorieCell"),
-            let categories = viewModel?.categories else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "categorieCell") else {
                 return UITableViewCell()
         }
 
-        cell.textLabel?.text = categories[indexPath.row]
+        cell.textLabel?.text = viewModel?.getCategoryAt(indexPath.row, captalized: true)
 
         return cell
     }
