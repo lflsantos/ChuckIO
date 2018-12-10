@@ -15,12 +15,12 @@
 		7647556A21B49853009822E9 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647556921B49853009822E9 /* CategoriesViewModel.swift */; };
 		7647556C21B49B96009822E9 /* ChuckAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647556B21B49B96009822E9 /* ChuckAPI.swift */; };
 		764E92AC21BDDE26008C2BB7 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E92AB21BDDE26008C2BB7 /* UIImageView.swift */; };
+		764E92AF21BDF5D6008C2BB7 /* CategoriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E92AE21BDF5D6008C2BB7 /* CategoriesViewModelTests.swift */; };
 		76EA2F2821B389D700031E72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EA2F2721B389D700031E72 /* Main.storyboard */; };
 		76F8ADC821B367720032298F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8ADC721B367720032298F /* AppDelegate.swift */; };
 		76F8ADCA21B367720032298F /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8ADC921B367720032298F /* JokeViewController.swift */; };
 		76F8ADCF21B367740032298F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F8ADCE21B367740032298F /* Assets.xcassets */; };
 		76F8ADD221B367740032298F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F8ADD021B367740032298F /* LaunchScreen.storyboard */; };
-		76F8ADDD21B367740032298F /* ChuckIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8ADDC21B367740032298F /* ChuckIOTests.swift */; };
 		76F8ADE821B367750032298F /* ChuckIOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8ADE721B367750032298F /* ChuckIOUITests.swift */; };
 		A4F81707764A1826117722B4 /* Pods_ChuckIOUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C955407E988404D8858CF3CF /* Pods_ChuckIOUITests.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +52,7 @@
 		7647556921B49853009822E9 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
 		7647556B21B49B96009822E9 /* ChuckAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckAPI.swift; sourceTree = "<group>"; };
 		764E92AB21BDDE26008C2BB7 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		764E92AE21BDF5D6008C2BB7 /* CategoriesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModelTests.swift; sourceTree = "<group>"; };
 		76EA2F2721B389D700031E72 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		76F8ADC421B367720032298F /* ChuckIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F8ADC721B367720032298F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		76F8ADD121B367740032298F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76F8ADD321B367740032298F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76F8ADD821B367740032298F /* ChuckIOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuckIOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		76F8ADDC21B367740032298F /* ChuckIOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckIOTests.swift; sourceTree = "<group>"; };
 		76F8ADDE21B367750032298F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76F8ADE321B367750032298F /* ChuckIOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuckIOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F8ADE721B367750032298F /* ChuckIOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckIOUITests.swift; sourceTree = "<group>"; };
@@ -206,8 +206,8 @@
 		76F8ADDB21B367740032298F /* ChuckIOTests */ = {
 			isa = PBXGroup;
 			children = (
-				76F8ADDC21B367740032298F /* ChuckIOTests.swift */,
 				76F8ADDE21B367750032298F /* Info.plist */,
+				764E92AE21BDF5D6008C2BB7 /* CategoriesViewModelTests.swift */,
 			);
 			path = ChuckIOTests;
 			sourceTree = "<group>";
@@ -474,7 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76F8ADDD21B367740032298F /* ChuckIOTests.swift in Sources */,
+				764E92AF21BDF5D6008C2BB7 /* CategoriesViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

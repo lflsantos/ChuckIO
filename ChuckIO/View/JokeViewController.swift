@@ -52,6 +52,7 @@ extension JokeViewController: JokeViewModelDelegate {
             ivIcon.imageFromUrl(iconUrl)
         }
         lblJoke.text = viewModel?.jokeText
+        title = viewModel?.category.capitalized
         self.showLoadingView(viewModel?.isLoading ?? true)
     }
 }

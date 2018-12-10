@@ -33,9 +33,13 @@ public class CategoriesViewModel {
 
     func populateCategories() {
         ChuckAPI().getCategories(onComplete: { [weak self] (categories) in
-            self?.categories = categories
+            self?.categories = self?.captalizeStrings(categories) ?? []
             self?.delegate?.updateUI()
             }, onError: { (_) in
         })
+    }
+
+    func captalizeStrings(_ strings: [String]) -> [String] {
+        return strings.map({ $0.capitalized })
     }
 }

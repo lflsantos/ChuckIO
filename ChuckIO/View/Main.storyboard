@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="a0v-Op-EOh">
-                            <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="72" width="375" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="L7c-kq-FPs">
-                                    <rect key="frame" x="169" y="3.5" width="37" height="37"/>
+                                    <rect key="frame" x="169" y="11.5" width="37" height="37"/>
                                     <color key="color" red="0.98431372549999996" green="0.26274509800000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </activityIndicatorView>
                             </subviews>
@@ -60,9 +60,7 @@
                             <outlet property="delegate" destination="0G6-2W-Hg3" id="bGr-1w-PqK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Category" id="NQR-xm-KFU">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="5mk-f6-6lu"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Category" id="NQR-xm-KFU"/>
                     <connections>
                         <outlet property="activityIndicator" destination="L7c-kq-FPs" id="9bf-aE-ZdV"/>
                         <outlet property="searchDisplayController" destination="jPw-3g-rxk" id="xf9-ao-c9m"/>
