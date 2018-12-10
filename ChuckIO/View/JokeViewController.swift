@@ -45,14 +45,13 @@ class JokeViewController: UIViewController {
         show ? self.view.addSubview(loadingView) : loadingView.removeFromSuperview()
     }
 
-    //MARK: - IBActions
+    // MARK: - IBActions
     @IBAction func reloadJoke(_ sender: Any) {
         viewModel?.getJoke()
     }
 }
 
 extension JokeViewController: JokeViewModelDelegate {
-
     func updateUI() {
         if let iconUrl = viewModel?.icon {
             ivIcon.imageFromUrl(iconUrl)
