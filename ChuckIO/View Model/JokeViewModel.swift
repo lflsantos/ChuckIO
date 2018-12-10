@@ -11,6 +11,7 @@ import UIKit
 
 protocol JokeViewModelDelegate: class {
     func updateUI()
+    func startLoading()
 }
 
 public class JokeViewModel {
@@ -18,7 +19,13 @@ public class JokeViewModel {
     // MARK: - Properties
     var service: ChuckAPI
     var category: String
-    var isLoading = true
+    var isLoading = true {
+        didSet {
+            if isLoading {
+                delegate?.startLoading()
+            }
+        }
+    }
     var joke: Joke? {
         didSet {
             guard let text = joke?.value,

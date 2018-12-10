@@ -40,13 +40,19 @@ class JokeViewController: UIViewController {
         viewModel?.getJoke()
     }
 
+    // MARK: - Methods
     func showLoadingView(_ show: Bool) {
         show ? self.view.addSubview(loadingView) : loadingView.removeFromSuperview()
     }
 
+    //MARK: - IBActions
+    @IBAction func reloadJoke(_ sender: Any) {
+        viewModel?.getJoke()
+    }
 }
 
 extension JokeViewController: JokeViewModelDelegate {
+
     func updateUI() {
         if let iconUrl = viewModel?.icon {
             ivIcon.imageFromUrl(iconUrl)
@@ -54,5 +60,9 @@ extension JokeViewController: JokeViewModelDelegate {
         lblJoke.text = viewModel?.jokeText
         title = viewModel?.category.capitalized
         self.showLoadingView(viewModel?.isLoading ?? true)
+    }
+
+    func startLoading() {
+        showLoadingView(true)
     }
 }

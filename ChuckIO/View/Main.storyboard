@@ -101,7 +101,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rox-AH-P28"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Joke" largeTitleDisplayMode="never" id="YNV-Zw-rWi"/>
+                    <navigationItem key="navigationItem" title="Joke" largeTitleDisplayMode="never" id="YNV-Zw-rWi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="vNQ-um-r5k">
+                            <connections>
+                                <action selector="reloadJoke:" destination="OZI-rM-d5T" id="sNP-WR-3Tt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="ivIcon" destination="St4-e2-4os" id="f4N-6e-l2w"/>
                         <outlet property="lblJoke" destination="wZ8-YL-uCR" id="rHX-Ic-0Bm"/>
