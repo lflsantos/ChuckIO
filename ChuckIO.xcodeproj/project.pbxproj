@@ -9,8 +9,15 @@
 /* Begin PBXBuildFile section */
 		45999ED0348FBE9451E30EB0 /* Pods_ChuckIOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A5C5CF5B7ECE7701A9A3C3 /* Pods_ChuckIOTests.framework */; };
 		56E351B7724578271A803858 /* Pods_ChuckIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F446226DB8CB1A368C36ED /* Pods_ChuckIO.framework */; };
+		7647556021B46920009822E9 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647555F21B46920009822E9 /* Joke.swift */; };
+		7647556421B46B2B009822E9 /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647556321B46B2B009822E9 /* JokeViewModel.swift */; };
+		7647556621B470AE009822E9 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647556521B470AE009822E9 /* CategoriesTableViewController.swift */; };
+		7647556A21B49853009822E9 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647556921B49853009822E9 /* CategoriesViewModel.swift */; };
+		7647556C21B49B96009822E9 /* ChuckAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7647556B21B49B96009822E9 /* ChuckAPI.swift */; };
+		764E92AC21BDDE26008C2BB7 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E92AB21BDDE26008C2BB7 /* UIImageView.swift */; };
+		76EA2F2821B389D700031E72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EA2F2721B389D700031E72 /* Main.storyboard */; };
 		76F8ADC821B367720032298F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8ADC721B367720032298F /* AppDelegate.swift */; };
-		76F8ADCA21B367720032298F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8ADC921B367720032298F /* ViewController.swift */; };
+		76F8ADCA21B367720032298F /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8ADC921B367720032298F /* JokeViewController.swift */; };
 		76F8ADCF21B367740032298F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F8ADCE21B367740032298F /* Assets.xcassets */; };
 		76F8ADD221B367740032298F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F8ADD021B367740032298F /* LaunchScreen.storyboard */; };
 		76F8ADDD21B367740032298F /* ChuckIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F8ADDC21B367740032298F /* ChuckIOTests.swift */; };
@@ -39,9 +46,16 @@
 		04A5C5CF5B7ECE7701A9A3C3 /* Pods_ChuckIOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckIOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0573C33D16F794706DE099D2 /* Pods-ChuckIO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckIO.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChuckIO/Pods-ChuckIO.release.xcconfig"; sourceTree = "<group>"; };
 		2110240EBD3C3AE2888EDE6C /* Pods-ChuckIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckIO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChuckIO/Pods-ChuckIO.debug.xcconfig"; sourceTree = "<group>"; };
+		7647555F21B46920009822E9 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		7647556321B46B2B009822E9 /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
+		7647556521B470AE009822E9 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		7647556921B49853009822E9 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		7647556B21B49B96009822E9 /* ChuckAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckAPI.swift; sourceTree = "<group>"; };
+		764E92AB21BDDE26008C2BB7 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		76EA2F2721B389D700031E72 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		76F8ADC421B367720032298F /* ChuckIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76F8ADC721B367720032298F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76F8ADC921B367720032298F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76F8ADC921B367720032298F /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
 		76F8ADCE21B367740032298F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76F8ADD121B367740032298F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76F8ADD321B367740032298F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,9 +114,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		764E92AD21BDEF8C008C2BB7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				764E92AB21BDDE26008C2BB7 /* UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		76EA2F1621B3770D00031E72 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				7647556321B46B2B009822E9 /* JokeViewModel.swift */,
+				7647556921B49853009822E9 /* CategoriesViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -110,6 +134,7 @@
 		76EA2F1721B3771D00031E72 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7647555F21B46920009822E9 /* Joke.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,16 +142,19 @@
 		76EA2F1821B3772700031E72 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				76F8ADC921B367720032298F /* ViewController.swift */,
+				76EA2F2721B389D700031E72 /* Main.storyboard */,
+				76F8ADC921B367720032298F /* JokeViewController.swift */,
+				7647556521B470AE009822E9 /* CategoriesTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		76EA2F1921B3779700031E72 /* Helper */ = {
+		76EA2F1921B3779700031E72 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				7647556B21B49B96009822E9 /* ChuckAPI.swift */,
 			);
-			path = Helper;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		76EA2F1A21B37BD300031E72 /* Support Files */ = {
@@ -164,7 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				76EA2F1A21B37BD300031E72 /* Support Files */,
-				76EA2F1921B3779700031E72 /* Helper */,
+				764E92AD21BDEF8C008C2BB7 /* Extensions */,
+				76EA2F1921B3779700031E72 /* Service */,
 				76EA2F1821B3772700031E72 /* View */,
 				76EA2F1721B3771D00031E72 /* Model */,
 				76EA2F1621B3770D00031E72 /* View Model */,
@@ -311,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76EA2F2821B389D700031E72 /* Main.storyboard in Resources */,
 				76F8ADD221B367740032298F /* LaunchScreen.storyboard in Resources */,
 				76F8ADCF21B367740032298F /* Assets.xcassets in Resources */,
 			);
@@ -384,7 +414,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		CB629CA8E07B01857AB02D5C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -429,8 +459,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76F8ADCA21B367720032298F /* ViewController.swift in Sources */,
+				7647556421B46B2B009822E9 /* JokeViewModel.swift in Sources */,
+				76F8ADCA21B367720032298F /* JokeViewController.swift in Sources */,
+				7647556621B470AE009822E9 /* CategoriesTableViewController.swift in Sources */,
 				76F8ADC821B367720032298F /* AppDelegate.swift in Sources */,
+				7647556A21B49853009822E9 /* CategoriesViewModel.swift in Sources */,
+				764E92AC21BDDE26008C2BB7 /* UIImageView.swift in Sources */,
+				7647556C21B49B96009822E9 /* ChuckAPI.swift in Sources */,
+				7647556021B46920009822E9 /* Joke.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +636,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z9RKQHBK3;
-				INFOPLIST_FILE = ChuckIO/Info.plist;
+				INFOPLIST_FILE = "ChuckIO/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -620,7 +656,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z9RKQHBK3;
-				INFOPLIST_FILE = ChuckIO/Info.plist;
+				INFOPLIST_FILE = "ChuckIO/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

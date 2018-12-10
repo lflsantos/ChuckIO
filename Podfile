@@ -7,7 +7,6 @@ target 'ChuckIO' do
 
   # Pods for ChuckIO
   pod 'Alamofire'
-  pod 'SwiftLint'
 
   target 'ChuckIOTests' do
     inherit! :search_paths
